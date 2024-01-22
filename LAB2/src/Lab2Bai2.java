@@ -17,7 +17,11 @@ public class Lab2Bai2 {
 		b = scanner.nextDouble();
 		System.out.print("Nhập hệ số c: ");
 		c = scanner.nextDouble();
-		double x = -c/b;
+		double delta = (b * b) - (4 * a * c);
+		double x,x1,x2 ;
+		x = -c/b;
+		x1 = (-b+Math.sqrt(delta))/(2*a);
+		x2 = (-b-Math.sqrt(delta))/(2*a);
 		if(a==0){
 			if(b==0){
 				if(c==0){
@@ -28,11 +32,19 @@ public class Lab2Bai2 {
 				}
 			}
 			else {
-				System.out.printf("Phương trình có nghiệm duy nhất: %f", x);
+				System.out.printf("Phương trình có nghiệm duy nhất: %f",x);
 			}
 		}
 		else {
-			
+			if(delta <0 ) {
+				System.out.print("Phương trình vô nghiệm");
+			}
+			if(delta == 0) {
+				System.out.printf("Phương trình có nghiệm kép: %f", x1);
+			}
+			if(delta > 0) {
+				System.out.printf("Phương trình có nghiệm x1 = %.1f và x2 = %.1f",x1,x2);
+			}
 		}
 	}
 }
