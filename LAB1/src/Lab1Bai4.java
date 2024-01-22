@@ -18,7 +18,12 @@ public class Lab1Bai4 {
 		System.out.print("Nhập hệ số c: ");
 		c = scanner.nextDouble();
 		delta =(b * b) - (4 * a * c);
-		System.out.printf("Căn delta: %.1f", Math.sqrt(delta));
+		if (delta >= 0) {
+			System.out.printf("Căn delta: %.1f", Math.sqrt(delta));
+		}
+		else {
+			System.out.printf("Delta số âm, không có căn delta");
+		}
 	}
 
 }
