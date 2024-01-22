@@ -17,11 +17,13 @@ public class Lab2Bai2 {
 		b = scanner.nextDouble();
 		System.out.print("Nhập hệ số c: ");
 		c = scanner.nextDouble();
+		
 		double delta = (b * b) - (4 * a * c);
 		double x,x1,x2 ;
 		x = -c/b;
 		x1 = (-b+Math.sqrt(delta))/(2*a);
 		x2 = (-b-Math.sqrt(delta))/(2*a);
+		
 		if(a==0){
 			if(b==0){
 				if(c==0){
