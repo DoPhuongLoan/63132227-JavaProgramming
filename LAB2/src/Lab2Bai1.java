@@ -8,9 +8,9 @@
 import java.util.Scanner;
 public class Lab2Bai1 {
 	public static void main(String[] args) {
-	// TODO Auto-generated method stub
-	Scanner scanner = new Scanner(System.in);
-	double a, b;
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		double a, b;
         System.out.print("Nhập hệ số a: ");
         a = scanner.nextDouble();
         System.out.print("Nhập hệ số b: ");
@@ -27,5 +27,7 @@ public class Lab2Bai1 {
         else {
         	System.out.printf("Nghiệm của phương trình: %.2f",x);
         }
+        
 	}
+
 }
