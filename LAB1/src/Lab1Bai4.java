@@ -10,14 +10,15 @@ public class Lab1Bai4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
-		double a, b, c;
+		double a, b, c, delta;
 		System.out.print("Nhập hệ số a: ");
 		a = scanner.nextDouble();
 		System.out.print("Nhập hệ số b: ");
 		b = scanner.nextDouble();
 		System.out.print("Nhập hệ số c: ");
 		c = scanner.nextDouble();
-
+		delta =(b * b) - (4 * a * c);
+		System.out.printf("Căn delta: %.1f", Math.sqrt(delta));
 	}
 
 }
