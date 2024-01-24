@@ -20,6 +20,11 @@ public class Lab3Bai1 {
 				break;
 			}
 		}
+		if (check) {
+			System.out.printf("%d là số nguyên tố", n);
+		}else {
+			System.out.printf("%d không phải là số nguyên tố", n);
+		}
 	}
 
 }
