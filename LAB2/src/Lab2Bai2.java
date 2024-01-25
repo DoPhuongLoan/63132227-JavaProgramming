@@ -19,8 +19,9 @@ public class Lab2Bai2 {
 		c = scanner.nextDouble();
 		
 		double delta = (b * b) - (4 * a * c);
-		double x,x1,x2 ;
-		x = -c/b;
+		double t,x,x1,x2 ;
+		t = -c/b;
+		x = -b/(2 * a);
 		x1 = (-b+Math.sqrt(delta))/(2*a);
 		x2 = (-b-Math.sqrt(delta))/(2*a);
 		
@@ -34,7 +35,7 @@ public class Lab2Bai2 {
 				}
 			}
 			else {
-				System.out.printf("Phương trình có nghiệm duy nhất: %f",x);
+				System.out.printf("Phương trình có nghiệm duy nhất: %f",t);
 			}
 		}
 		else {
@@ -42,7 +43,7 @@ public class Lab2Bai2 {
 				System.out.print("Phương trình vô nghiệm");
 			}
 			if(delta == 0) {
-				System.out.printf("Phương trình có nghiệm kép: %f", x1);
+				System.out.printf("Phương trình có nghiệm kép: %f", x);
 			}
 			if(delta > 0) {
 				System.out.printf("Phương trình có nghiệm x1 = %.1f và x2 = %.1f",x1,x2);
