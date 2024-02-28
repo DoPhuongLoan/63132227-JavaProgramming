@@ -16,7 +16,7 @@ import java.awt.event.ActionEvent;
 
 public class PTB2 {
 
-    private JFrame frmPhngTrnhBc;
+    private JFrame ptb2;
     private JTextField tA;
     private JTextField tB;
     private JTextField tC;
@@ -27,7 +27,7 @@ public class PTB2 {
             public void run() {
                 try {
                     PTB2 window = new PTB2();
-                    window.frmPhngTrnhBc.setVisible(true);
+                    window.ptb2.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -46,18 +46,18 @@ public class PTB2 {
      * Initialize the contents of the frame.
      */
     private void initialize() {
-        frmPhngTrnhBc = new JFrame();
-        frmPhngTrnhBc.setTitle("PHƯƠNG TRÌNH BẬC 2");
-        frmPhngTrnhBc.getContentPane().setForeground(new Color(255, 0, 0));
-        frmPhngTrnhBc.getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 20));
-        frmPhngTrnhBc.setBounds(100, 100, 810, 393);
-        frmPhngTrnhBc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frmPhngTrnhBc.getContentPane().setLayout(null);
+    	ptb2 = new JFrame();
+    	ptb2.setTitle("PHƯƠNG TRÌNH BẬC 2");
+    	ptb2.getContentPane().setForeground(new Color(255, 0, 0));
+    	ptb2.getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 20));
+    	ptb2.setBounds(100, 100, 810, 393);
+    	ptb2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	ptb2.getContentPane().setLayout(null);
         
         JPanel panel = new JPanel();
         panel.setForeground(new Color(0, 0, 0));
         panel.setBounds(20, 36, 756, 304);
-        frmPhngTrnhBc.getContentPane().add(panel);
+        ptb2.getContentPane().add(panel);
         panel.setBorder(null); 
         panel.setLayout(null);
         
