@@ -1,4 +1,4 @@
-package ntu_63132227;
+package ntu.pl63132227;
 
 import java.awt.EventQueue;
 
@@ -44,7 +44,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 	 */
 	public Cau1_AppLenghthConverter() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 673, 575);
+		setBounds(100, 100, 694, 579);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 181, 181));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -132,7 +132,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 				try {
 		            double nhap = Double.parseDouble(txtnhap.getText());
 		            if (nhap < 0) {
-		                txtkq.setText(""); // Xóa bất kỳ thông báo nào có thể đã được hiển thị trước đó
+		                txtkq.setText("");
 		                lblthongbao.setText("Không hỗ trợ số âm!");
 		                return;
 		            }
@@ -140,9 +140,9 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		            String gtdoi = (String) comboBox2.getSelectedItem();
 		            double kq = kqchuyendoi(nhap, gtchuyen, gtdoi);
 		            txtkq.setText(Double.toString(kq));
-		            lblthongbao.setText(""); // Xóa thông báo nếu chuyển đổi thành công
+		            lblthongbao.setText("");
 		        } catch (NumberFormatException ex) {
-		            txtkq.setText(""); // Xóa bất kỳ kết quả nào có thể đã được hiển thị trước đó
+		            txtkq.setText("");
 		            lblthongbao.setText("Vui lòng nhập số hợp lệ!");
 		            return;
 		        }
