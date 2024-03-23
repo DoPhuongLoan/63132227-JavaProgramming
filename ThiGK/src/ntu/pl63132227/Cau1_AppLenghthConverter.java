@@ -129,7 +129,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		JButton btnkq = new JButton("");
 		btnkq.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				try {
+			try {
 		            double nhap = Double.parseDouble(txtnhap.getText());
 		            if (nhap < 0) {
 		                txtkq.setText("");
@@ -157,27 +157,27 @@ public class Cau1_AppLenghthConverter extends JFrame {
 	private double kqchuyendoi(double nhap, String gtchuyen, String gtdoi) {
 		double ketqua = 0 ;
 		switch (gtchuyen) {
-        	case "Kilomet":
-        		ketqua = ketquaKm(nhap, gtdoi);
-        		break;
-        	case "Hectomet":
-        		ketqua = ketquaHec(nhap, gtdoi);
-        		break;
-        	case "Decamet":
-        		ketqua = ketquaDeca(nhap, gtdoi);
-        		break;
-        	case "Met":
-        		ketqua = ketquaM(nhap, gtdoi);
-        		break;
-        	case "Decimet":
-        		ketqua = ketquaDeci(nhap, gtdoi);
-        		break;
-        	case "Centimet":
-        		ketqua = ketquaCm(nhap, gtdoi);
-        		break;
-        	case "Milimet":
-        		ketqua = ketquaMm(nhap, gtdoi);
-        		break;
+			case "Kilomet":
+        			ketqua = ketquaKm(nhap, gtdoi);
+        			break;
+        		case "Hectomet":
+        			ketqua = ketquaHec(nhap, gtdoi);
+        			break;
+        		case "Decamet":
+        			ketqua = ketquaDeca(nhap, gtdoi);
+        			break;
+        		case "Met":
+        			ketqua = ketquaM(nhap, gtdoi);
+        			break;
+        		case "Decimet":
+        			ketqua = ketquaDeci(nhap, gtdoi);
+        			break;
+        		case "Centimet":
+        			ketqua = ketquaCm(nhap, gtdoi);
+        			break;
+        		case "Milimet":
+        			ketqua = ketquaMm(nhap, gtdoi);
+        			break;
 		}
 		return ketqua;
 	}
@@ -186,195 +186,195 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		double kqkm = 0 ;
 		switch (gtdoi) {
 			case "Kilomet":
-                kqkm = nhap;
-                break;
-            case "Hectomet":
-            	kqkm = nhap * 10;
-                break;
-            case "Decamet":
-            	kqkm = nhap * 100;
-                break;
-            case "Met":
-            	kqkm = nhap * 1000;
-                break;
-            case "Decimet":
-            	kqkm = nhap * 10000;
-                break;
-            case "Centimet":
-            	kqkm = nhap * 100000;
-                break;
-            case "Milimet":
-            	kqkm = nhap * 1000000;
-                break;
+                		kqkm = nhap;
+                		break;
+           		case "Hectomet":
+            			kqkm = nhap * 10;
+                		break;
+            		case "Decamet":
+            			kqkm = nhap * 100;
+                		break;
+            		case "Met":
+            			kqkm = nhap * 1000;
+                		break;
+            		case "Decimet":
+            			kqkm = nhap * 10000;
+                		break;
+            		case "Centimet":
+            			kqkm = nhap * 100000;
+                		break;
+            		case "Milimet":
+            			kqkm = nhap * 1000000;
+               			break;
         }
-        return kqkm;
+        	return kqkm;
     }
 	
 	private double ketquaHec(double nhap, String gtdoi) {
 		double kqhec = 0;
-        switch (gtdoi) {
-            case "Kilomet":
-            	kqhec = nhap / 10;
-                break;
-            case "Hectomet":
-            	kqhec = nhap;
-                break;
-            case "Decamet":
-            	kqhec = nhap * 10;
-                break;
-            case "Met":
-            	kqhec = nhap * 100;
-                break;
-            case "Decimet":
-            	kqhec = nhap * 1000;
-                break;
-            case "Centimet":
-            	kqhec = nhap * 10000;
-                break;
-            case "Milimet":
-            	kqhec = nhap * 100000;
-                break;
+        	switch (gtdoi) {
+            		case "Kilomet":
+            			kqhec = nhap / 10;
+                		break;
+           		case "Hectomet":
+            			kqhec = nhap;
+                		break;
+            		case "Decamet":
+            			kqhec = nhap * 10;
+                		break;
+            		case "Met":
+            			kqhec = nhap * 100;
+                		break;
+            		case "Decimet":
+            			kqhec = nhap * 1000;
+                		break;
+            		case "Centimet":
+            			kqhec = nhap * 10000;
+                		break;
+            		case "Milimet":
+            			kqhec = nhap * 100000;
+                		break;
         }
 		return kqhec;
     }
 	private double ketquaDeca(double nhap, String gtdoi) {
 		double kqdeca = 0;
-	    switch (gtdoi) {
-	        case "Kilomet":
-	            kqdeca = nhap / 100;
-	            break;
-	        case "Hectomet":
-	            kqdeca = nhap / 10;
-	            break;
-	        case "Decamet":
-	            kqdeca = nhap;
-	            break;
-	        case "Met":
-	            kqdeca = nhap * 10;
-	            break;
-	        case "Decimet":
-	            kqdeca = nhap * 100;
-	            break;
-	        case "Centimet":
-	            kqdeca = nhap * 1000;
-	            break;
-	        case "Milimet":
-	            kqdeca = nhap * 10000;
-	            break;
+	    	switch (gtdoi) {
+	        	case "Kilomet":
+	            		kqdeca = nhap / 100;
+	            		break;
+	        	case "Hectomet":
+	            		kqdeca = nhap / 10;
+	            		break;
+	        	case "Decamet":
+	            		kqdeca = nhap;
+	            		break;
+	        	case "Met":
+	            		kqdeca = nhap * 10;
+	            		break;
+	        	case "Decimet":
+	            		kqdeca = nhap * 100;
+	            		break;
+	        	case "Centimet":
+	            		kqdeca = nhap * 1000;
+	            		break;
+	        	case "Milimet":
+	            		kqdeca = nhap * 10000;
+	            		break;
 	    }
-	    return kqdeca;
+	    	return kqdeca;
 	}
 	
 	private double ketquaM(double nhap, String gtdoi) {
 		double kqmet = 0;
-	    switch (gtdoi) {
-	        case "Kilomet":
-	            kqmet = nhap / 1000;
-	            break;
-	        case "Hectomet":
-	            kqmet = nhap / 100;
-	            break;
-	        case "Decamet":
-	            kqmet = nhap / 10;
-	            break;
-	        case "Met":
-	            kqmet = nhap;
-	            break;
-	        case "Decimet":
-	            kqmet = nhap * 10;
-	            break;
-	        case "Centimet":
-	            kqmet = nhap * 100;
-	            break;
-	        case "Milimet":
-	            kqmet = nhap * 1000;
-	            break;
+	    	switch (gtdoi) {
+	        	case "Kilomet":
+	            		kqmet = nhap / 1000;
+	            		break;
+	        	case "Hectomet":
+	            		kqmet = nhap / 100;
+	            		break;
+	        	case "Decamet":
+	            		kqmet = nhap / 10;
+	            		break;
+	        	case "Met":
+	            		kqmet = nhap;
+	           		break;
+	        	case "Decimet":
+	            		kqmet = nhap * 10;
+	            		break;
+	        	case "Centimet":
+	            		kqmet = nhap * 100;
+	            		break;
+	        	case "Milimet":
+	            		kqmet = nhap * 1000;
+	            		break;
 	    }
-	    return kqmet;
+	    	return kqmet;
 	}
 	
 	private double ketquaDeci(double nhap, String gtdoi) {
 		double kqdeci = 0;
-	    switch (gtdoi) {
-	        case "Kilomet":
-	            kqdeci = nhap / 10000;
-	            break;
-	        case "Hectomet":
-	            kqdeci = nhap / 1000;
-	            break;
-	        case "Decamet":
-	            kqdeci = nhap / 100;
-	            break;
-	        case "Met":
-	            kqdeci = nhap / 10;
-	            break;
-	        case "Decimet":
-	            kqdeci = nhap;
-	            break;
-	        case "Centimet":
-	            kqdeci = nhap * 10;
-	            break;
-	        case "Milimet":
-	            kqdeci = nhap * 100;
-	            break;
+	    	switch (gtdoi) {
+	        	case "Kilomet":
+	            		kqdeci = nhap / 10000;
+	            		break;
+		        case "Hectomet":
+	            		kqdeci = nhap / 1000;
+	            		break;
+	        	case "Decamet":
+	            		kqdeci = nhap / 100;
+	            		break;
+	        	case "Met":
+	            		kqdeci = nhap / 10;
+	            		break;
+	        	case "Decimet":
+	            		kqdeci = nhap;
+	            		break;
+	        	case "Centimet":
+	            		kqdeci = nhap * 10;
+	            		break;
+	        	case "Milimet":
+	            		kqdeci = nhap * 100;
+	            		break;
 	    }
-	    return kqdeci;
+	    	return kqdeci;
 	}
 
 	
 	private double ketquaCm(double nhap, String gtdoi) {
 		double kqcm = 0;
-	    switch (gtdoi) {
-	        case "Kilomet":
-	            kqcm = nhap / 100000;
-	            break;
-	        case "Hectomet":
-	            kqcm = nhap / 10000;
-	            break;
-	        case "Decamet":
-	            kqcm = nhap / 1000;
-	            break;
-	        case "Met":
-	            kqcm = nhap / 100;
-	            break;
-	        case "Decimet":
-	            kqcm = nhap / 10;
-	            break;
-	        case "Centimet":
-	            kqcm = nhap;
-	            break;
-	        case "Milimet":
-	            kqcm = nhap * 10;
-	            break;
+	    	switch (gtdoi) {
+	        	case "Kilomet":
+	            		kqcm = nhap / 100000;
+	            		break;
+	        	case "Hectomet":
+	            		kqcm = nhap / 10000;
+	           		break;
+	        	case "Decamet":
+	            		kqcm = nhap / 1000;
+	            		break;
+	        	case "Met":
+	            		kqcm = nhap / 100;
+	            		break;
+	        	case "Decimet":
+	            		kqcm = nhap / 10;
+	           		break;
+	        	case "Centimet":
+	            		kqcm = nhap;
+	            		break;
+	        	case "Milimet":
+	            		kqcm = nhap * 10;
+	            		break;
 	    }
-	    return kqcm;
+	    	return kqcm;
 	}
 	
 	private double ketquaMm(double nhap, String gtdoi) {
 		double kqmm = 0;
-	    switch (gtdoi) {
-	        case "Kilomet":
-	            kqmm = nhap / 1000000;
-	            break;
-	        case "Hectomet":
-	            kqmm = nhap / 100000;
-	            break;
-	        case "Decamet":
-	            kqmm = nhap / 10000;
-	            break;
-	        case "Met":
-	            kqmm = nhap / 1000;
-	            break;
-	        case "Decimet":
-	            kqmm = nhap / 100;
-	            break;
-	        case "Centimet":
-	            kqmm = nhap / 10;
-	            break;
-	        case "Milimet":
-	            kqmm = nhap;
-	            break;
+	    	switch (gtdoi) {
+	        	case "Kilomet":
+	            		kqmm = nhap / 1000000;
+	            		break;
+	        	case "Hectomet":
+	            		kqmm = nhap / 100000;
+	            		break;
+	        	case "Decamet":
+	            		kqmm = nhap / 10000;
+	            		break;
+	        	case "Met":
+	            		kqmm = nhap / 1000;
+	            		break;
+	        	case "Decimet":
+	            		kqmm = nhap / 100;
+	            		break;
+	        	case "Centimet":
+	            		kqmm = nhap / 10;
+	            		break;
+	        	case "Milimet":
+	            		kqmm = nhap;
+	            		break;
 	    }
-	    return kqmm;
+	    	return kqmm;
 	}
 }
