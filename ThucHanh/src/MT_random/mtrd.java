@@ -103,9 +103,9 @@ public class mtrd extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String sothunhat = so1.getText().toString();
 		        String sothuhai = so2.getText().toString();
-		        int so1 = Integer.parseInt(sothunhat);
-		        int so2 = Integer.parseInt(sothuhai);
-		        int tong = so1 + so2;
+		        int s1 = Integer.parseInt(sothunhat);
+		        int s2 = Integer.parseInt(sothuhai);
+		        int tong = s1 + s2;
 		        String chuoiKq = String.valueOf(tong);
 		        kq.setText(chuoiKq);
 			}
@@ -121,13 +121,14 @@ public class mtrd extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String sothunhat = so1.getText().toString();
 		        String sothuhai = so2.getText().toString();
-		        int so1 = Integer.parseInt(sothunhat);
-		        int so2 = Integer.parseInt(sothuhai);
-		        int tru = so1 - so2;
+		        int s1 = Integer.parseInt(sothunhat);
+		        int s2 = Integer.parseInt(sothuhai);
+		        int tru = s1 - s2;
 		        String chuoiKq = String.valueOf(tru);
 		        kq.setText(chuoiKq);
 			}
 		});
+		
 		btnTru.setBackground(new Color(255, 255, 255));
 		btnTru.setForeground(new Color(255, 255, 255));
 		btnTru.setIcon(new ImageIcon("C:\\Users\\Admin\\Downloads\\tru.jpg"));
@@ -139,9 +140,9 @@ public class mtrd extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String sothunhat = so1.getText().toString();
 		        String sothuhai = so2.getText().toString();
-		        int so1 = Integer.parseInt(sothunhat);
-		        int so2 = Integer.parseInt(sothuhai);
-		        int nhan = so1 * so2;
+		        int s1 = Integer.parseInt(sothunhat);
+		        int s2 = Integer.parseInt(sothuhai);
+		        int nhan = s1 * s2;
 		        String chuoiKq = String.valueOf(nhan);
 		        kq.setText(chuoiKq);
 			}
@@ -157,9 +158,9 @@ public class mtrd extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String sothunhat = so1.getText().toString();
 		        String sothuhai = so2.getText().toString();
-		        int so1 = Integer.parseInt(sothunhat);
-		        int so2 = Integer.parseInt(sothuhai);
-		        float chia = (float) so1 / so2;
+		        int s1 = Integer.parseInt(sothunhat);
+		        int s2 = Integer.parseInt(sothuhai);
+		        float chia = (float) s1 / s2;
 		        String chuoiKq = String.valueOf(chia);
 		        kq.setText(chuoiKq);
 			}
